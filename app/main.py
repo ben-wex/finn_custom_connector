@@ -30,9 +30,9 @@ def chat():
     # logging.info(f"GPT Response: {gpt_response}")
     return jsonify({'response': user_input})
 
-@app.route('/', methods=['POST'])
+@app.route('/')
 def top_level_chat():
-    user_input = request.json.get('input', '')
+    user_input = 'static test output'
     # # logging.info(f"User input: {user_input}, datatype {type(user_input)}")
     # response = client.chat.completions.create(
     # model="gpt-4o",
